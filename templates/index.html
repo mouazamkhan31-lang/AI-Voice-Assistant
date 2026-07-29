@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>AI Voice Assistant Pro</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🤖 AI Voice Assistant</h1>
+
+    <div class="orb" id="orb"></div>
+
+    <div class="status" id="status">
+        Ready...
+    </div>
+
+    <div class="chat-box" id="chat-box">
+
+    </div>
+
+    <div class="input-area">
+
+        <input
+        id="user-input"
+        type="text"
+        placeholder="Type your question...">
+
+        <button id="send-btn">
+            Send
+        </button>
+
+        <button id="mic-btn">
+            🎤 Speak
+        </button>
+
+        <button id="clear-btn">
+            🗑 Clear
+        </button>
+
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+
+</html>
