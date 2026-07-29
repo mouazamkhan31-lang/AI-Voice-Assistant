@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+<<<<<<< HEAD
 
     <meta charset="UTF-8">
 
@@ -13,10 +14,18 @@
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/style.css') }}">
 
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Assistant</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+>>>>>>> ed757cadea60d35dd97ec28b8ecd2eccc2126a1d
 </head>
 
 <body>
 
+<<<<<<< HEAD
 <div class="container">
 
     <h1>🤖 AI Voice Assistant</h1>
@@ -55,6 +64,43 @@
 </div>
 
 <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+=======
+    <div class="container">
+
+        <h1>🤖 AI Voice Assistant</h1>
+
+        <div class="circle" id="orb"></div>
+
+        <div class="visualizer" id="visualizer">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+        <button id="mic-btn">
+            🎤 Start Listening
+        </button>
+
+        <button id="clear-btn">
+    🗑️ Clear Chat
+</button>
+<button id="download-btn">
+    📥 Download Chat
+</button>
+        <div class="status" id="status">
+            Waiting...
+        </div>
+
+        <div class="chat-box" id="chat-box">
+
+        </div>
+
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+>>>>>>> ed757cadea60d35dd97ec28b8ecd2eccc2126a1d
 
 </body>
 
